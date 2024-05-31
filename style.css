@@ -1,0 +1,178 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --bg-color-primary: #000000;
+    --bg-color-700: #06181C;
+    --bg-color-600: rgba(6, 22, 27, 0.5);
+    --primary-color: #065E7C;
+    --blue-700: #092D38;
+    --text-color: #E1E1E6;
+    --placeholder-color: #7C7C8A;
+}
+
+html, body, input {
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #000000;
+}
+
+.sr-only {
+position: absolute;
+width: 1px;
+height: 1px;
+padding: 0;
+margin: -1px;
+overflow: hidden;
+clip: rect(0, 0, 0, 0);
+white-space: nowrap;
+border-width: 0;
+}
+
+#app {
+    max-width: 112rem;
+    margin: 5rem auto 0;
+    padding: 2rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 8.7rem;
+}
+
+header form {
+    display: flex;
+    gap: .8rem;
+
+}
+
+header form span input {
+    background-color: #06181C;
+    color: var(--placeholder-color);
+
+    border: none;
+    border-radius: 0.5rem;
+
+    padding: 1.6rem;
+    width: 46.2rem;
+}
+
+header form button {
+    display: flex;
+    gap: 0.8rem;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--primary-color);
+
+    border: none;
+    border-radius: 0.5rem;
+
+    padding: 1.2rem 3.2rem;
+}
+
+header form button img {
+    width: 2.2rem;
+    height: 2.2rem;
+    object-fit: cover;
+}
+
+header form button p {
+    font-weight: 700;
+    color: white;
+}
+
+table { 
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table th {
+    text-align: left;
+}
+
+table thead tr th:first-child {
+    border-top-left-radius: .5rem;
+}
+
+table thead tr th:last-child {
+    border-top-right-radius: .5rem;
+}
+
+table tr {
+    border: 1px solid #4A808C;
+}
+
+
+table thead tr th {
+    padding: 1.6rem 4rem;
+    
+    background-color: #092D38;
+    color: var(--text-color);
+}
+
+table thead tr th {
+    font-size: 2rem;
+    color: var(--text-color);
+}
+
+table tbody tr:nth-child(odd) { 
+    background-color: #06181C;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: rgba(6, 22, 27, .9);
+}
+
+table tbody tr th {
+    padding: 2.4rem 4rem;
+}
+
+table tbody tr th:first-child {
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+}
+
+table tbody tr th img {
+    width: 5.6rem;
+    height: 5.6rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.name {
+    font-size: 2rem;
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+.username {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+table tbody tr th p {
+    font-size: 2rem;
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+table tbody tr th a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: #F75A68;
+    font-weight: 700;
+}
